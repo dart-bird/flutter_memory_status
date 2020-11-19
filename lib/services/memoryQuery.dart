@@ -9,7 +9,7 @@ class MemoryQuery {
     List<Memory> memoryList = [];
     try {
       NetworkHelper networkHelper = NetworkHelper(url: apiUrl);
-      final _data = await networkHelper.httpGet().timeout(Duration(seconds: 5));
+      final _data = await networkHelper.httpGet().timeout(Duration(seconds: 10));
       List<dynamic> _memoryObjects = _data['bundleData']['bundleList'];
       _memoryObjects = _memoryObjects.reversed.toList();
 
