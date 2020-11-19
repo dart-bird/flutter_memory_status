@@ -3,7 +3,7 @@ import 'package:flutter_memory_status/models/memory.dart';
 import 'package:flutter_memory_status/services/networking.dart';
 
 class MemoryQuery {
-  String apiUrl = 'http://m.danawa.com/product/bestReviewNbundle.json?code=6380268&mallReviewCount=1625';
+  String apiUrl = 'https://cors-anywhere.herokuapp.com/http://m.danawa.com/product/bestReviewNbundle.json?code=6380268&mallReviewCount=1625';
   RegExp moneyRegExp = RegExp(r'/\B(?=(\d{3})+(?!\d))/g');
   Future<List<Memory>> getMemoryPriceData() async {
     List<Memory> memoryList = [];
