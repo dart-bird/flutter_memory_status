@@ -60,11 +60,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Container(
-                    margin: EdgeInsets.all(16.0),
+                    margin: EdgeInsets.fromLTRB(16, 16, 0, 16),
                     child: Text(
                       'Korea Memory Price',
                       style: TextStyle(
-                        fontSize: 30,
+                        fontSize: 25,
                         fontWeight: FontWeight.bold,
                       ),
                     ),

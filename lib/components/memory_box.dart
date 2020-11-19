@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class MemoryBox extends StatefulWidget {
@@ -69,15 +71,21 @@ class _MemoryBoxState extends State<MemoryBox> {
                     padding: EdgeInsets.all(8.0),
                     child: Image.asset(
                       imgUrl,
-                      scale: 3.5,
+                      scale: 4.0,
                     ),
                   ),
                   Spacer(),
                   Row(
                     children: [
-                      Text(unit),
+                      Text(
+                        unit,
+                        style: TextStyle(fontSize: 12),
+                      ),
                       SizedBox(width: 8),
-                      Text("$value 원"),
+                      Text(
+                        "$value 원",
+                        style: TextStyle(fontSize: 12),
+                      ),
                     ],
                   ),
                 ],
